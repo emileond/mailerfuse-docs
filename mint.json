@@ -25,12 +25,11 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
-  "primaryTab": [
+  "primaryTab": 
     {
       "name": "API Reference",
       "url": "api-reference"
-    }
-  ],
+    },
   "anchors": [
     {
       "name": "Documentation",
