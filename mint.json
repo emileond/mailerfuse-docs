@@ -25,9 +25,9 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
-  "tabs": [
+  "primaryTab": [
     {
-      "primaryTab": "API Reference",
+      "name": "API Reference",
       "url": "api-reference"
     }
   ],
