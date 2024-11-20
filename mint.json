@@ -27,7 +27,7 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "primaryTab": "API Reference",
       "url": "api-reference"
     }
   ],
