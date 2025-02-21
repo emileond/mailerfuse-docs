@@ -1,0 +1,40 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Mailerfuse API Docs",
+  "colors": {
+    "primary": "#564af5",
+    "light": "#6557f0",
+    "dark": "#564af5"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "groups": [
+      {
+        "group": "API Documentation",
+        "pages": [
+          "api-reference/introduction"
+        ]
+      },
+      {
+        "group": "Endpoints",
+        "pages": [
+          "api-reference/endpoint/email/verify",
+          "api-reference/endpoint/lists/post",
+          "api-reference/endpoint/lists/get"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://mailerfuse.com/dashboard"
+    }
+  }
+}
