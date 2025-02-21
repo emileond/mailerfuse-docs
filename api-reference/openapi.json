@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "http://api.mailerfuse.com"
+      "url": "https://api.mailerfuse.com"
     }
   ],
   "security": [
