@@ -1,33 +1,43 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: ''
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## What is Mailerfuse?
+Mailerfuse is a powerful email verification service designed to help you ensure the validity of your email lists. Whether you're cleaning up your subscriber list, improving deliverability, or reducing bounce rates, Mailerfuse provides accurate and reliable email verification, similar to ZeroBounce.
 
-## Welcome
+Each email validation deducts **one credit**, so make sure you have enough credits in your account before making requests.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+---
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+## Getting an API Key
+
+Mailerfuse uses API keys to authenticate requests. You can generate an API key through the [Mailerfuse Dashboard](https://mailerfuse.com/keys).
+
+<Frame>
+    <img
+        alt="API Key Generation"
+        src="/images/api-keys.png" />
+</Frame>
+
+---
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+To authenticate API requests, include your key in the `x-api-key` header:
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+<Warning>
+    Your API key is a **secret** and should be stored securely—never expose it in public repositories or frontend code.
+</Warning>
+
+```bash
+curl -X POST "https://api.mailerfuse.com/email/verify" \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: YOUR_API_KEY" \
+  -d '{ "email": "test@example.com" }'
 ```
+
+## Next Steps
+
+Now that you have an API key, you can start verifying emails. Check out our Endpoints Reference to get started. 🚀
+
